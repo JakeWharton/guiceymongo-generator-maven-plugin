@@ -1,4 +1,4 @@
-data Test {
+data Person {
 	string name;
 	set<string> aliases;
 }

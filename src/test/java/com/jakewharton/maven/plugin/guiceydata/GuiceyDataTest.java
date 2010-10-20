@@ -27,36 +27,34 @@ import org.codehaus.plexus.PlexusTestCase;
  * @author Jake Wharton
  */
 public class GuiceyDataTest extends AbstractMojoTestCase {
+	private static final String POM_FILE = "src/test/resources/test-project/pom.xml";
+	private static final String POM_GOAL = "generate";
+	private static final String GENERATED_FILE = "src/test/resources/test-project/src/main/java/com/testproject/model/Person.java";
+	
+	private static final String MESSAGE_POM_EXISTS = "Pom.xml exists";
+	private static final String MESSAGE_GENERATE_GOAL = "Plugin has generate goal";
+	private static final String MESSAGE_GENERATED_FILE_EXISTS = "Generated file exists";
+	
     /**
-     * {@inheritDoc}
+     * <p>Quick and dirty test to see if generation is working properly.</p>
+     * 
+     * <p>Any other testing is really beyond the scope of this plugin. Testing
+     * of the actual GuiceyData generator should be encapsulated in its
+     * library.</p>
+     * 
+     * @throws Exception
      */
-    protected void setUp() throws Exception {
-        super.setUp();
+    public void testGeneratedFile() throws Exception {
+        final File pom = PlexusTestCase.getTestFile(GuiceyDataTest.POM_FILE);
+        Assert.assertNotNull(GuiceyDataTest.MESSAGE_POM_EXISTS, pom);
+        Assert.assertTrue(GuiceyDataTest.MESSAGE_POM_EXISTS, pom.exists());
 
-        // TODO ...
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    protected void tearDown() throws Exception {
-        super.tearDown();
-
-        // TODO ...
-    }
-
-    /**
-     * @throws Exception if any
-     */
-    public void testSomething() throws Exception {
-        final File pom = PlexusTestCase.getTestFile("src/test/resources/test-project/pom.xml");
-        Assert.assertNotNull(pom);
-        Assert.assertTrue(pom.exists());
-
-        final GuiceyDataMojo myMojo = (GuiceyDataMojo)this.lookupMojo("generate", pom);
-        Assert.assertNotNull(myMojo);
+        final GuiceyDataMojo myMojo = (GuiceyDataMojo)this.lookupMojo(GuiceyDataTest.POM_GOAL, pom);
+        Assert.assertNotNull(GuiceyDataTest.MESSAGE_GENERATE_GOAL, myMojo);
         myMojo.execute();
-
-        // TODO ...
+        
+        final File generatedFile = new File(GuiceyDataTest.GENERATED_FILE);
+        Assert.assertNotNull(GuiceyDataTest.MESSAGE_GENERATED_FILE_EXISTS, generatedFile);
+        Assert.assertTrue(GuiceyDataTest.MESSAGE_GENERATED_FILE_EXISTS, generatedFile.exists());
     }
 }

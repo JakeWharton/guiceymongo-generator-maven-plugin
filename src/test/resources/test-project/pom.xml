@@ -23,10 +23,10 @@
         <artifactId>guiceydata-maven-plugin</artifactId>
         <configuration>
           <files>
-          	<file>src/test/resources/test-project/test.data</file>
+          	<file>src/test/resources/test-project/src/main/model.data</file>
           </files>
-          <outputPackage>com.test</outputPackage>
-          <outputDirectory>target/test-classes</outputDirectory>
+          <outputPackage>com.testproject.model</outputPackage>
+          <outputDirectory>src/test/resources/test-project/src/main/java</outputDirectory>
         </configuration>
       </plugin>
     </plugins>
