@@ -1,0 +1,4 @@
+data Test {
+	string name;
+	set<string> aliases;
+}

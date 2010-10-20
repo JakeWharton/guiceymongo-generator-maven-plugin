@@ -1,4 +1,4 @@
-package com.jakewharton;
+package com.jakewharton.maven.plugin.guiceydata;
 
 /*
  * Copyright 2010 Jake Wharton.
