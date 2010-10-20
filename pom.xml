@@ -1,0 +1,55 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.jakewharton</groupId>
+  <artifactId>guiceydata-maven-plugin</artifactId>
+  <packaging>maven-plugin</packaging>
+  <version>1.0-SNAPSHOT</version>
+
+  <name>GuiceyData Maven Plugin</name>
+  <description>Facilitates and automates the use of GuiceyData for your project.</description>
+  <url>http://jakewharton.com</url>
+
+  <scm>
+    <url>http://github.com/JakeWharton/guiceydata-maven-plugin/</url>
+    <connection>scm:git:git@github.com:JakeWharton/guiceydata-maven-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:JakeWharton/guiceydata-maven-plugin.git</developerConnection>
+  </scm>
+
+  <organization>
+    <name>Jake Wharton</name>
+    <url>http://jakewharton.com</url>
+  </organization>
+
+  <issueManagement>
+    <system>GitHub Issues</system>
+    <url>http://github.com/JakeWharton/guiceydata-maven-plugin/issues</url>
+  </issueManagement>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <repositories>
+    <repository>
+      <id>unmanaged</id>
+      <url>file://${basedir}/src/repository</url>
+    </repository>
+  </repositories>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-plugin-api</artifactId>
+      <version>2.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
