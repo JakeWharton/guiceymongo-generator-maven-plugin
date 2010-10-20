@@ -19,3 +19,13 @@ Usage
     </plugin>
 
 *Note*: There is no public repository for this plugin yet.
+
+
+Example
+-------
+
+See `src/test/resources/test-project/` for an example setup.
+
+Run `mvn test` in the root of this project and then check
+`src/test/resources/test-project/src/main/java/com/testproject/model/` for the
+generated classes.
