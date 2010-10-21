@@ -16,6 +16,14 @@
     <connection>scm:git:git@github.com:JakeWharton/guiceydata-maven-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:JakeWharton/guiceydata-maven-plugin.git</developerConnection>
   </scm>
+  
+  <distributionManagement>
+    <repository>
+      <id>release-repository</id>
+      <name>JakeWharton.com Maven Release Repository</name>
+      <url>scp://jakewharton.com/home/jakewharton/dl.jakewharton.com/maven</url>
+    </repository>
+  </distributionManagement>
 
   <organization>
     <name>Jake Wharton</name>
