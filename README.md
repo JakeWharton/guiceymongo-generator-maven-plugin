@@ -46,7 +46,7 @@ optional.
         </configuration>
       
       
-        <!--## OPTIONAL ##-->
+        <!--## RECOMMENDED ##-->
       
         <!-- This will automatically invoke generation when compiling your project.   -->
         <!-- If you choose not to add it, invoke manually with 'guiceydata:generage'. -->
