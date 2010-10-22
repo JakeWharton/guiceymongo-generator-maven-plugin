@@ -9,13 +9,42 @@ Usage
 -----
 
     <plugin>
+      <groupId>com.jakewharton</groupId>
       <artifactId>guiceydata-maven-plugin</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
       <configuration>
-        <files>
-          <file>src/main/model.data</file>
-        </files>
+      
+        <!--## REQUIRED ##-->
+        
+        <!-- Package of generated sources -->
         <outputPackage>com.example.model</outputPackage>
+        
+        <!--## OPTIONAL ##-->
+        
+        <!-- Directory to output generated sources. (Default: main source directory) -->
+        <outputDirectory>src/main/java</outputDirectory>
+        
+        <!-- Use camel casing for field names. (Default: false) -->
+        <useCamelCase>false</useCamelCase>
+        
+        <!-- Paths to check for schema definition files. These can be files -->
+        <!-- or directories. (Default: main source directory)               -->
+        <paths>
+          <path>src/main/java/com/example/people.data</path>
+          <path>src/main/java/com/example/model/</path>
+        </paths>
+        
+        <!-- Extensions to look for when searching directories. (Default: .data) -->
+        <extensions>
+          <extension>.data</extension>
+        </extensions>
+        
       </configuration>
+      <executions>
+        <execution>
+          <goal>generate</goal>
+        </execution>
+      </executions>
     </plugin>
 
 *Note*: There is no public repository for this plugin yet.

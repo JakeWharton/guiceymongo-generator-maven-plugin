@@ -23,9 +23,12 @@
         <artifactId>guiceydata-maven-plugin</artifactId>
         <configuration>
           <files>
+            <!-- The "src/test/resources/test-project" is needed because -->
+            <!-- testing is done from the parent project.                -->
           	<file>src/test/resources/test-project/src/main/model.data</file>
           </files>
           <outputPackage>com.testproject.model</outputPackage>
+          <!--  Again this elongated path is needed since it is a sub-project. -->
           <outputDirectory>src/test/resources/test-project/src/main/java</outputDirectory>
         </configuration>
       </plugin>
