@@ -132,6 +132,7 @@ public class GuiceyDataMojo extends AbstractMojo {
 		generator.setSourceDirectory(this.outputDirectory.getAbsolutePath());
 		generator.setOutputPackage(this.outputPackage);
 		generator.setFileExtensions(this.extensions);
+		generator.setUseCamelCaseKeys(this.useCamelCase);
 
 		// Hide output stream
 		generator.setIsQuiet(true);
