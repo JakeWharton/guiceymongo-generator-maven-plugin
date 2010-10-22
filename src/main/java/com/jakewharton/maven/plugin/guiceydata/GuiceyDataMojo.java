@@ -133,9 +133,8 @@ public class GuiceyDataMojo extends AbstractMojo {
 		generator.setOutputPackage(this.outputPackage);
 		generator.setFileExtensions(this.extensions);
 
-		// Hide output and error streams
-		System.setOut(null);
-		System.setErr(null);
+		// Hide output stream
+		generator.setIsQuiet(true);
 
 		try {
 			// Perform the generation

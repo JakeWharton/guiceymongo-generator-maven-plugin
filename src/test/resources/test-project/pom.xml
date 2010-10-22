@@ -1,10 +1,10 @@
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">\
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.jakewharton</groupId>
   <artifactId>guiceydata-maven-plugin-tester</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>0</version>
   <packaging>jar</packaging>
   <name>GuiceyData Maven Plugin Test</name>
 
@@ -22,11 +22,11 @@
       <plugin>
         <artifactId>guiceydata-maven-plugin</artifactId>
         <configuration>
-          <files>
+          <paths>
             <!-- The "src/test/resources/test-project" is needed because -->
             <!-- testing is done from the parent project.                -->
-          	<file>src/test/resources/test-project/src/main/model.data</file>
-          </files>
+          	<path>src/test/resources/test-project/src/main/model.data</path>
+          </paths>
           <outputPackage>com.testproject.model</outputPackage>
           <!--  Again this elongated path is needed since it is a sub-project. -->
           <outputDirectory>src/test/resources/test-project/src/main/java</outputDirectory>
