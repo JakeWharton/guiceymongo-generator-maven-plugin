@@ -39,13 +39,6 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
-	<repositories>
-		<repository>
-			<id>unmanaged</id>
-			<url>file://${basedir}/src/repository</url>
-		</repository>
-	</repositories>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -76,8 +69,8 @@
 
 		<dependency>
 			<groupId>com.lowereast</groupId>
-			<artifactId>guiceydata</artifactId>
-			<version>0.1.2</version>
+			<artifactId>guiceymongo</artifactId>
+			<version>0.3.0-SNAPSHOT</version>
 		</dependency>
 
 		<dependency>
