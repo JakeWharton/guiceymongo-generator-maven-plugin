@@ -139,7 +139,7 @@ public class GuiceyDataMojo extends AbstractMojo {
 
 		try {
 			// Perform the generation
-			generator.generate(this.useCamelCase, this.paths);
+			generator.generate(this.paths);
 		} catch (final Exception e) {
 			this.getLog().error(GuiceyDataMojo.MESSAGE_ERROR);
 			throw new MojoExecutionException(GuiceyDataMojo.MESSAGE_ERROR, e);
