@@ -17,9 +17,10 @@ package com.jakewharton.maven.plugin.guiceydata;
  */
 
 import java.io.File;
-import junit.framework.Assert;
 import org.apache.maven.plugin.testing.AbstractMojoTestCase;
 import org.codehaus.plexus.PlexusTestCase;
+import org.junit.Assert;
+import org.junit.Test;
 
 /**
  * Plugin testing.
@@ -44,6 +45,7 @@ public class GuiceyDataTest extends AbstractMojoTestCase {
      * 
      * @throws Exception
      */
+	@Test
     public void testGeneratedFile() throws Exception {
         final File pom = PlexusTestCase.getTestFile(GuiceyDataTest.POM_FILE);
         Assert.assertNotNull(GuiceyDataTest.MESSAGE_POM_EXISTS, pom);
