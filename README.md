@@ -42,6 +42,9 @@ optional.
             <extensions>
                 <extension>.data</extension>
             </extensions>
+            
+            <!-- Delete any java source files in the output directory (Default: false) -->
+            <deleteExisting>false</deleteExisting>
         
         </configuration>
       
