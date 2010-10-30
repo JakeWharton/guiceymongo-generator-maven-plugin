@@ -54,16 +54,6 @@ public class GuiceyDataMojo extends AbstractMojo {
 	 * Message when a fatal generation error has occurred.
 	 */
 	private static final String MESSAGE_ERROR = "Fatal error occured while generating classes.";
-	
-	/**
-	 * Warning message when a java source deletion operation fails.
-	 */
-	private static final String MESSAGE_DELETE = "Could not delete \"%s\" file.";
-	
-	/**
-	 * Extension of java source files.
-	 */
-	private static final String JAVA_EXTENSION = ".java";
 
 
 
@@ -117,14 +107,6 @@ public class GuiceyDataMojo extends AbstractMojo {
 	 */
 	private String[] extensions;
 
-	/**
-	 * Delete any existing <code>.java</code> files in the output directory
-	 * prior to generation.
-	 * 
-	 * @parameter default-value="false"
-	 */
-	private boolean deleteExisting;
-
 
 
 	/**
@@ -151,21 +133,6 @@ public class GuiceyDataMojo extends AbstractMojo {
 		generator.setOutputPackage(this.outputPackage);
 		generator.setFileExtensions(this.extensions);
 		generator.setUseCamelCaseKeys(this.useCamelCase);
-		
-		if (this.deleteExisting) {
-			// Delete any existing java files
-			for (final File javaFile : this.outputDirectory.listFiles()) {
-				if (javaFile.getName().endsWith(GuiceyDataMojo.JAVA_EXTENSION)) {
-					try {
-						if (!javaFile.delete()) {
-							throw new Exception();
-						}
-					} catch (final Exception e) {
-						this.getLog().warn(String.format(GuiceyDataMojo.MESSAGE_DELETE, javaFile.getName()));
-					}
-				}
-			}
-		}
 
 		// Hide output stream
 		generator.setIsQuiet(true);
