@@ -93,7 +93,7 @@ public class GuiceyDataMojo extends AbstractMojo {
 	 * Path to the source directory. This is used as a default for the
 	 * <code>paths</code> parameter if no values were specified.
 	 * 
-	 * @parameter expression="${project.build.sourceDirectory}"
+	 * @parameter default-value="src/main/resources"
 	 * @required
 	 * @readonly
 	 */

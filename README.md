@@ -32,7 +32,7 @@ optional.
             <useCamelCase>false</useCamelCase>
         
             <!-- Paths to check for schema definition files. These can be files -->
-            <!-- or directories. (Default: main source directory)               -->
+            <!-- or directories. (Default: `src/main/resources`)                -->
             <paths>
                 <path>src/main/java/com/example/people.data</path>
                 <path>src/main/java/com/example/model/</path>

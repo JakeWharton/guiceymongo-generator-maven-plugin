@@ -23,12 +23,15 @@
         <artifactId>guiceydata-maven-plugin</artifactId>
         <configuration>
           <paths>
-            <!-- The "src/test/resources/test-project" is needed because -->
-            <!-- testing is done from the parent project.                -->
-          	<path>src/test/resources/test-project/src/main/model.data</path>
+            <!-- This "src/test/resources/test-project" is needed because -->
+            <!-- testing is done from the parent project. Remove if using -->
+            <!-- in a normal project. -->
+          	<path>src/test/resources/test-project/src/main/resources/</path>
           </paths>
           <outputPackage>com.testproject.model</outputPackage>
-          <!--  Again this elongated path is needed since it is a sub-project. -->
+          <!-- Again this elongated path is needed since it is a sub-project. -->
+          <!-- Remove the `src/test/resources/test-project/` prefix is using  -->
+          <!-- in a normal project. -->
           <outputDirectory>src/test/resources/test-project/src/main/java</outputDirectory>
         </configuration>
       </plugin>
