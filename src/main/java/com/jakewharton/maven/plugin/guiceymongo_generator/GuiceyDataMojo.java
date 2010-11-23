@@ -1,4 +1,4 @@
-package com.jakewharton.maven.plugin.guiceydata;
+package com.jakewharton.maven.plugin.guiceymongo_generator;
 
 /*
  * Copyright 2010 Jake Wharton.

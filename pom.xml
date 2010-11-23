@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.jakewharton</groupId>
-	<artifactId>guiceydata-maven-plugin</artifactId>
+	<artifactId>guiceymongo-generator-maven-plugin</artifactId>
 	<packaging>maven-plugin</packaging>
 	<version>0.2-SNAPSHOT</version>
 
@@ -13,9 +13,9 @@
 	<url>http://jakewharton.com</url>
 
 	<scm>
-		<url>http://github.com/JakeWharton/guiceydata-maven-plugin/</url>
-		<connection>scm:git:git@github.com:JakeWharton/guiceydata-maven-plugin.git</connection>
-		<developerConnection>scm:git:git@github.com:JakeWharton/guiceydata-maven-plugin.git</developerConnection>
+		<url>http://github.com/JakeWharton/guiceymongo-generator-maven-plugin/</url>
+		<connection>scm:git:git@github.com:JakeWharton/guiceymongo-generator-maven-plugin.git</connection>
+		<developerConnection>scm:git:git@github.com:JakeWharton/guiceymongo-generator-maven-plugin.git</developerConnection>
 	</scm>
 
 	<distributionManagement>
@@ -33,7 +33,7 @@
 
 	<issueManagement>
 		<system>GitHub Issues</system>
-		<url>http://github.com/JakeWharton/guiceydata-maven-plugin/issues</url>
+		<url>http://github.com/JakeWharton/guiceymongo-generator-maven-plugin/issues</url>
 	</issueManagement>
 
 	<properties>

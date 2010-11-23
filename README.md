@@ -1,5 +1,5 @@
-guiceydata-maven-plugin
-=======================
+guiceymongo-generator-maven-plugin
+==================================
 
 Maven plugin to automatically build your GuiceyData metadata files into their
 Java source counterparts before the compilation phase.
@@ -14,8 +14,8 @@ optional.
 
     <plugin>
         <groupId>com.jakewharton</groupId>
-        <artifactId>guiceydata-maven-plugin</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <artifactId>guiceymongo-generator-maven-plugin</artifactId>
+        <version>0.2-SNAPSHOT</version>
         <configuration>
       
             <!--## REQUIRED ##-->

@@ -1,4 +1,4 @@
-package com.jakewharton.maven.plugin.guiceydata;
+package com.jakewharton.maven.plugin.guiceymongo_generator;
 
 /*
  * Copyright 2010 Jake Wharton.
@@ -21,6 +21,8 @@ import org.apache.maven.plugin.testing.AbstractMojoTestCase;
 import org.codehaus.plexus.PlexusTestCase;
 import org.junit.Assert;
 import org.junit.Test;
+
+import com.jakewharton.maven.plugin.guiceymongo_generator.GuiceyDataMojo;
 
 /**
  * Plugin testing.
