@@ -9,7 +9,7 @@
 	<version>0.2-SNAPSHOT</version>
 
 	<name>GuiceyData Maven Plugin</name>
-	<description>Facilitates and automates the use of GuiceyData for your project.</description>
+	<description>Facilitates and automates the use of GuiceyMongo-Generator for your Maven 2 project.</description>
 	<url>http://jakewharton.com</url>
 
 	<scm>
