@@ -18,7 +18,7 @@ package com.jakewharton.maven.plugin.guiceydata;
 
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
-import com.lowereast.guiceymongo.data.generator.GuiceyDataGenerator;
+import com.mattinsler.guiceymongo.data.generator.GuiceyDataGenerator;
 import java.io.File;
 
 /**
