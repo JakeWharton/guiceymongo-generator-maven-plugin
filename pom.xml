@@ -14,17 +14,22 @@
 
 	<scm>
 		<url>http://github.com/JakeWharton/guiceymongo-generator-maven-plugin/</url>
-		<connection>scm:git:git@github.com:JakeWharton/test-repo.git</connection>
-		<developerConnection>scm:git:git@github.com:JakeWharton/test-repo.git</developerConnection>
+		<connection>scm:git:git@github.com:JakeWharton/guiceymongo-generator-maven-plugin.git</connection>
+		<developerConnection>scm:git:git@github.com:JakeWharton/guiceymongo-generator-maven-plugin.git</developerConnection>
 	</scm>
 
-	<!--distributionManagement>
+	<distributionManagement>
 		<repository>
-			<id>release-repository</id>
+			<id>personal-repository</id>
 			<name>JakeWharton.com Maven Release Repository</name>
-			<url>scp://jakewharton.com/home/jakewharton/dl.jakewharton.com/maven</url>
+			<url>scp://masseria.dreamhost.com/home/jakewharton_repository/repository.jakewharton.com</url>
 		</repository>
-	</distributionManagement-->
+		<snapshotRepository>
+			<id>personal-repository</id>
+			<name>JakeWharton.com Maven Release Repository</name>
+			<url>scp://masseria.dreamhost.com/home/jakewharton_repository/repository.jakewharton.com</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 	<organization>
 		<name>Jake Wharton</name>
@@ -57,23 +62,8 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-release-plugin</artifactId>
 				<version>2.1</version>
-				<dependencies>
-					<dependency>
-						<groupId>org.apache.maven.scm</groupId>
-						<artifactId>maven-scm-provider-gitexe</artifactId>
-						<version>1.4</version>
-					</dependency>
-				</dependencies>
 			</plugin>
 		</plugins>
-
-		<extensions>
-			<extension>
-				<groupId>org.jvnet.wagon-svn</groupId>
-				<artifactId>wagon-svn</artifactId>
-				<version>1.9</version>
-			</extension>
-		</extensions>
 	</build>
 
 	<dependencies>
