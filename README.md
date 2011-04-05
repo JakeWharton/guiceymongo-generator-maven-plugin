@@ -18,12 +18,12 @@ optional.
         <version>0.2-SNAPSHOT</version>
         <configuration>
       
-            <!--## REQUIRED ##-->
+            <!--#### REQUIRED ####-->
         
             <!-- Package of generated sources -->
             <outputPackage>com.example.model</outputPackage>
         
-            <!--## OPTIONAL ##-->
+            <!--#### OPTIONAL ####-->
         
             <!-- Directory to output generated sources. (Default: main source directory) -->
             <outputDirectory>src/main/java</outputDirectory>
@@ -32,9 +32,9 @@ optional.
             <useCamelCase>false</useCamelCase>
         
             <!-- Paths to check for schema definition files. These can be files -->
-            <!-- or directories. (Default: `src/main/resources`)                -->
+            <!-- or directories. (Default: `src/main/guiceymongo`)                -->
             <paths>
-                <path>src/main/java/com/example/people.data</path>
+                <path>src/main/guiceymongo/com/example/people.data</path>
                 <path>src/main/java/com/example/model/</path>
             </paths>
         
@@ -46,7 +46,7 @@ optional.
         </configuration>
       
       
-        <!--## RECOMMENDED ##-->
+        <!--#### RECOMMENDED ####-->
       
         <!-- This will automatically invoke generation when compiling your project.   -->
         <!-- If you choose not to add it, invoke manually with 'guiceydata:generage'. -->

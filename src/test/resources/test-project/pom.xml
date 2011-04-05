@@ -20,13 +20,13 @@
   <build>
     <plugins>
       <plugin>
-        <artifactId>guiceydata-maven-plugin</artifactId>
+        <artifactId>guiceymongo-generator-maven-plugin</artifactId>
         <configuration>
           <paths>
             <!-- This "src/test/resources/test-project" is needed because -->
             <!-- testing is done from the parent project. Remove if using -->
             <!-- in a normal project. -->
-          	<path>src/test/resources/test-project/src/main/resources/</path>
+          	<path>src/test/resources/test-project/src/main/guiceymongo/</path>
           </paths>
           <outputPackage>com.testproject.model</outputPackage>
           <!-- Again this elongated path is needed since it is a sub-project. -->

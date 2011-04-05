@@ -27,7 +27,7 @@ import java.io.File;
  * 
  * @goal generate
  * @phase generate-sources
- * @author Jake Wharton
+ * @author Jake Wharton <jakewharton@gmail.com>
  */
 public class GuiceyDataMojo extends AbstractMojo {
 	/**
@@ -93,7 +93,7 @@ public class GuiceyDataMojo extends AbstractMojo {
 	 * Path to the source directory. This is used as a default for the
 	 * <code>paths</code> parameter if no values were specified.
 	 * 
-	 * @parameter default-value="src/main/resources"
+	 * @parameter default-value="src/main/guiceymongo"
 	 * @required
 	 * @readonly
 	 */
@@ -116,13 +116,17 @@ public class GuiceyDataMojo extends AbstractMojo {
 		// Check for pom.xml specified files
 		if ((this.paths == null) || (this.paths.length == 0)) {
 			this.getLog().info(GuiceyDataMojo.MESSAGE_NO_PATHS);
-			this.paths = new String[] { this.defaultFileDirectory.getAbsolutePath() };
+			this.paths = new String[] {
+					this.defaultFileDirectory.getAbsolutePath()
+			};
 		}
 
 		// Check for pom.xml specified extensions
 		if ((this.extensions == null) || (this.extensions.length == 0)) {
 			this.getLog().info(GuiceyDataMojo.MESSAGE_NO_EXTENSIONS);
-			this.extensions = new String[] { GuiceyDataMojo.DEFAULT_EXTENSION };
+			this.extensions = new String[] {
+					GuiceyDataMojo.DEFAULT_EXTENSION
+			};
 		}
 
 		this.getLog().info(GuiceyDataMojo.MESSAGE_GENERATING);
