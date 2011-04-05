@@ -1,0 +1,23 @@
+Maven
+
+  This project is deployed to a custom repository for easy inclusion in your project.
+  
+  Add the following dependency:
+  
+-------------------------------------------------
+<dependency>
+  <groupId>com.jakewharton</groupId>
+  <artifactId>guiceymongo-generator-maven-plugin</artifactId>
+  <version>0.2.0</version>
+</dependency>
+-------------------------------------------------
+  
+  In the <<<repositories>>> section add the following:
+  
+-------------------------------------------------
+<repository>
+  <id>jakewharton.com</id>
+  <name>Jake Wharton's Personal Repository</name>
+  <url>http://r.jakewharton.com/maven/release/</url>
+</repository>
+-------------------------------------------------
