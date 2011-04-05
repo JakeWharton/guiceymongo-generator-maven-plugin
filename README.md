@@ -15,7 +15,7 @@ optional.
     <plugin>
         <groupId>com.jakewharton</groupId>
         <artifactId>guiceymongo-generator-maven-plugin</artifactId>
-        <version>0.2-SNAPSHOT</version>
+        <version>1.0.0</version>
         <configuration>
       
             <!--#### REQUIRED ####-->
@@ -56,8 +56,6 @@ optional.
             </execution>
         </executions>
     </plugin>
-
-*Note*: There is no public repository for this plugin yet.
 
 
 Example
