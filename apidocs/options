@@ -1,0 +1,26 @@
+-classpath
+'/home/jake/Dropbox/Projects/guiceymongo-generator-maven-plugin/target/checkout/target/classes:/home/jake/.m2/repository/log4j/log4j/1.2.16/log4j-1.2.16.jar:/home/jake/.m2/repository/org/antlr/stringtemplate/3.2/stringtemplate-3.2.jar:/home/jake/.m2/repository/com/mattinsler/guiceytools/0.2/guiceytools-0.2.jar:/home/jake/.m2/repository/com/mattinsler/guiceymongo-generator/0.2/guiceymongo-generator-0.2.jar:/home/jake/.m2/repository/com/google/inject/guice/2.0/guice-2.0.jar:/home/jake/.m2/repository/org/antlr/antlr-runtime/3.2/antlr-runtime-3.2.jar:/home/jake/.m2/repository/com/mattinsler/guiceymongo/0.2/guiceymongo-0.2.jar:/home/jake/.m2/repository/commons-io/commons-io/2.0/commons-io-2.0.jar:/home/jake/.m2/repository/org/apache/maven/maven-plugin-api/2.0/maven-plugin-api-2.0.jar:/home/jake/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/home/jake/.m2/repository/net/sf/jopt-simple/jopt-simple/3.2/jopt-simple-3.2.jar:/home/jake/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/jake/.m2/repository/jalopy/jalopy/1.5rc3/jalopy-1.5rc3.jar:/home/jake/.m2/repository/org/mongodb/mongo-java-driver/2.3/mongo-java-driver-2.3.jar'
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'/home/jake/Dropbox/Projects/guiceymongo-generator-maven-plugin/target/checkout/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2010-2011 <a href="http://jakewharton.com">Jake Wharton</a>. All Rights Reserved.'
+-charset
+'UTF-8'
+-d
+'/home/jake/Dropbox/Projects/guiceymongo-generator-maven-plugin/target/checkout/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'GuiceyData Maven Plugin 1.0.0 API'
+-link
+'http://download.oracle.com/javase/6/docs/api'
+-link
+'http://java.sun.com/javase/6/docs/api'
+-use
+-version
+-windowtitle
+'GuiceyData Maven Plugin 1.0.0 API'
