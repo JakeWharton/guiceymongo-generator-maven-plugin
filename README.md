@@ -1,7 +1,7 @@
 guiceymongo-generator-maven-plugin
 ==================================
 
-Maven plugin to automatically build your GuiceyData metadata files into their
+Maven plugin to automatically build your GuiceyMongo metadata files into their
 Java source counterparts before the compilation phase.
 
 
